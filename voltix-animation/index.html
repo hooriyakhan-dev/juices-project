@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Voltix Energy Animation</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=DM+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top">Voltix Energy<small>GSAP Animation</small></div>
+
+<div class="frame">
+ <div class="scene" id="scene" data-t="pine">
+  <div class="orb o1" id="o1"></div><div class="orb o2" id="o2"></div>
+  <div class="pour pa" id="pa"><svg class="pw" viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0 0H400V10C366 36 334 36 300 10C266 -16 234 -16 200 10C166 36 134 36 100 10C66 -16 34 -16 0 10Z"/></svg></div>
+  <div class="pour pb" id="pb"><svg class="pw" viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0 0H400V10C366 36 334 36 300 10C266 -16 234 -16 200 10C166 36 134 36 100 10C66 -16 34 -16 0 10Z"/></svg></div>
+  <div class="vig"></div><div class="sweep"></div><div class="hazard"></div><div class="flash"></div>
+  <div class="brand">VOLTIX</div>
+  <button class="glass" id="fs" title="Full screen">⛶</button>
+  <div class="word" id="word"></div>
+  <div class="stage" id="stage">
+   <div class="halo" id="halo"></div>
+   <svg class="megabolt" id="mb" viewBox="0 0 100 150"><defs><linearGradient id="mbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" style="stop-color:var(--acc)"/></linearGradient></defs><path d="M64 0L8 82h38L22 150 94 56H56L84 0Z" fill="url(#mbg)"/></svg>
+   <div class="rw" id="rw"><i class="ring"></i><i class="ring ring2"></i></div>
+   <div class="floor" id="floor"></div><div class="shock" id="shock"></div>
+   <div class="canw" id="canw"><img class="can" id="can" alt="Voltix can"></div>
+   <div class="gc" style="--x:-18;--y:-13"><div class="gi glass"><b>⚡ Instant</b><span>energy</span></div></div>
+   <div class="gc" style="--x:16.5;--y:6"><div class="gi glass"><b>250 ml</b><span>ice cold</span></div></div>
+  </div>
+  <div class="copy">
+   <div class="kick ln"><span><b id="idx">01</b> / 03 · ENERGY DRINK</span></div>
+   <h2 class="ln"><span id="ttl">Pineapple Pop</span></h2>
+   <p class="ln"><span id="dsc">Instant energy, sharper focus.</span></p>
+  </div>
+  <div class="ctrl glass" id="ctrl"><button class="chip on"><i class="fill"></i><span>Pineapple</span></button><button class="chip"><i class="fill"></i><span>Berry</span></button><button class="chip"><i class="fill"></i><span>Dragonfruit</span></button></div>
+ </div>
+</div>
+
+<div class="code"><div class="tabs"><i></i><i></i><i></i><button class="tab on">HTML</button><button class="tab">CSS</button><button class="tab">JS</button></div><pre id="code"></pre></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
